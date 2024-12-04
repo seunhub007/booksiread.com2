@@ -45,8 +45,8 @@ jobs:
           username: sadiboseun2013@gmail.com
           password: ${{ secrets.EMAIL_PASSWORD }}
           server_address: smtp.gmail.com
-          server_port: 465
-          secure: true
+          server_port: 587
+          secure: false
           subject: "New Docker Image Version for Simple Web App"
           to: "sadiboseun2013@gmail.com"
           from: Sadibo Seun <sadiboseun2013@gmail.com>
