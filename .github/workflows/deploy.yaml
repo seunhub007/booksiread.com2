@@ -42,7 +42,7 @@ jobs:
       - name: "Annouce the latest version of the deployment"
         uses: dawidd6/action-send-mail@v4
         with:
-          username: sadiboseun2013@gmail.com
+          username: sadiboseun@yahoo.com
           password: ${{ secrets.EMAIL_PASSWORD }}
           server_address: smtp.gmail.com
           server_port: 587
