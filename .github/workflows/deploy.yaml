@@ -46,7 +46,7 @@ jobs:
           password: ${{ secrets.EMAIL_PASSWORD }}
           server_address: smtp.mail.yahoo.com
           server_port: 587
-          secure: false
+          secure: true
           subject: "New Docker Image Version for Simple Web App"
           to: "sadiboseun2013@gmail.com"
           from: Sadibo Seun <sadiboseun@yahoo.com>
