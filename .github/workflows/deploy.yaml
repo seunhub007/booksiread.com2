@@ -44,10 +44,10 @@ jobs:
         with:
           username: sadiboseun@yahoo.com
           password: ${{ secrets.EMAIL_PASSWORD }}
-          server_address: smtp.gmail.com
+          server_address: smtp.mail.yahoo.com
           server_port: 587
           secure: false
           subject: "New Docker Image Version for Simple Web App"
           to: "sadiboseun2013@gmail.com"
-          from: Sadibo Seun <sadiboseun2013@gmail.com>
+          from: Sadibo Seun <sadiboseun@yahoo.com>
           body: "New image build: ${{ env.APP_VERSION }}"      
