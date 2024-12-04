@@ -39,15 +39,15 @@ jobs:
         run: |
             docker push seun007/booksiread:${{ env.APP_VERSION }}
 
-      - name: "Annouce the latest version of the deployment"
-        uses: dawidd6/action-send-mail@v4
-        with:
-          username: sadiboseun@yahoo.com
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          server_address: smtp.mail.yahoo.com
-          server_port: 465
-          secure: true
-          subject: "New Docker Image Version for Simple Web App"
-          from: Sadibo Seun <sadiboseun@yahoo.com>
-          to: "sadiboseun2013@gmail.com"
-          body: "New image build: ${{ env.APP_VERSION }}"      
+      # - name: "Annouce the latest version of the deployment"
+      #   uses: dawidd6/action-send-mail@v4
+      #   with:
+      #     username: sadiboseun@yahoo.com
+      #     password: ${{ secrets.EMAIL_PASSWORD }}
+      #     server_address: smtp.mail.yahoo.com
+      #     server_port: 465
+      #     secure: true
+      #     subject: "New Docker Image Version for Simple Web App"
+      #     from: Sadibo Seun <sadiboseun@yahoo.com>
+      #     to: "sadiboseun2013@gmail.com"
+      #     body: "New image build: ${{ env.APP_VERSION }}"      
